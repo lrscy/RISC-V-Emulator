@@ -1,0 +1,212 @@
+ELF Header:
+  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF64
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           RISC-V
+  Version:                           0x1
+  Entry point address:               0x10000
+  Start of program headers:          64 (bytes into file)
+  Start of section headers:          54088 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               64 (bytes)
+  Size of program headers:           56 (bytes)
+  Number of program headers:         1
+  Size of section headers:           64 (bytes)
+  Number of section headers:         22
+  Section header string table index: 19
+
+Section Headers:
+  [Nr] Name              Type             Address           Offset
+       Size              EntSize          Flags  Link  Info  Align
+  [ 0]                   NULL             0000000000000000  00000000
+       0000000000000000  0000000000000000           0     0     0
+  [ 1] .text             PROGBITS         0000000000010000  00001000
+       0000000000000974  0000000000000000  AX       0     0     4
+  [ 2] .rodata           PROGBITS         0000000000010978  00001978
+       0000000000000008  0000000000000001 AMS       0     0     8
+  [ 3] .init_array       INIT_ARRAY       0000000000010980  00001980
+       0000000000000008  0000000000000000  WA       0     0     8
+  [ 4] .fini_array       FINI_ARRAY       0000000000010988  00001988
+       0000000000000008  0000000000000000  WA       0     0     8
+  [ 5] .eh_frame         PROGBITS         0000000000010990  00001990
+       0000000000000430  0000000000000000   A       0     0     8
+  [ 6] .jcr              PROGBITS         0000000000010dc0  00001dc0
+       0000000000000008  0000000000000000  WA       0     0     8
+  [ 7] .data             PROGBITS         0000000000010dd0  00001dd0
+       0000000000000748  0000000000000000  WA       0     0     8
+  [ 8] .sdata            PROGBITS         0000000000011520  00002520
+       0000000000000018  0000000000000000  WA       0     0     8
+  [ 9] .sbss             NOBITS           0000000000011538  00002538
+       0000000000000008  0000000000000000  WA       0     0     8
+  [10] .bss              NOBITS           0000000000011540  00002538
+       0000000000000050  0000000000000000  WA       0     0     8
+  [11] .comment          PROGBITS         0000000000000000  00002538
+       0000000000000011  0000000000000001  MS       0     0     1
+  [12] .debug_info       PROGBITS         0000000000000000  00002549
+       00000000000046e6  0000000000000000           0     0     1
+  [13] .debug_abbrev     PROGBITS         0000000000000000  00006c2f
+       0000000000000e1f  0000000000000000           0     0     1
+  [14] .debug_loc        PROGBITS         0000000000000000  00007a4e
+       0000000000001c11  0000000000000000           0     0     1
+  [15] .debug_aranges    PROGBITS         0000000000000000  0000965f
+       00000000000001a0  0000000000000000           0     0     1
+  [16] .debug_line       PROGBITS         0000000000000000  000097ff
+       0000000000001f95  0000000000000000           0     0     1
+  [17] .debug_str        PROGBITS         0000000000000000  0000b794
+       0000000000000b43  0000000000000001  MS       0     0     1
+  [18] .debug_ranges     PROGBITS         0000000000000000  0000c2d7
+       0000000000000080  0000000000000000           0     0     1
+  [19] .shstrtab         STRTAB           0000000000000000  0000c357
+       00000000000000ca  0000000000000000           0     0     1
+  [20] .symtab           SYMTAB           0000000000000000  0000c428
+       0000000000000af8  0000000000000018          21    53     8
+  [21] .strtab           STRTAB           0000000000000000  0000cf20
+       0000000000000427  0000000000000000           0     0     1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings)
+  I (info), L (link order), G (group), T (TLS), E (exclude), x (unknown)
+  O (extra OS processing required) o (OS specific), p (processor specific)
+
+There are no section groups in this file.
+
+Program Headers:
+  Type           Offset             VirtAddr           PhysAddr
+                 FileSiz            MemSiz              Flags  Align
+  LOAD           0x0000000000001000 0x0000000000010000 0x0000000000010000
+                 0x0000000000001538 0x0000000000001590  RWE    1000
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .text .rodata .init_array .fini_array .eh_frame .jcr .data .sdata .sbss .bss 
+
+There is no dynamic section in this file.
+
+There are no relocations in this file.
+
+The decoding of unwind sections for machine type RISC-V is not currently supported.
+
+Symbol table '.symtab' contains 117 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 0000000000010000     0 SECTION LOCAL  DEFAULT    1 
+     2: 0000000000010978     0 SECTION LOCAL  DEFAULT    2 
+     3: 0000000000010980     0 SECTION LOCAL  DEFAULT    3 
+     4: 0000000000010988     0 SECTION LOCAL  DEFAULT    4 
+     5: 0000000000010990     0 SECTION LOCAL  DEFAULT    5 
+     6: 0000000000010dc0     0 SECTION LOCAL  DEFAULT    6 
+     7: 0000000000010dd0     0 SECTION LOCAL  DEFAULT    7 
+     8: 0000000000011520     0 SECTION LOCAL  DEFAULT    8 
+     9: 0000000000011538     0 SECTION LOCAL  DEFAULT    9 
+    10: 0000000000011540     0 SECTION LOCAL  DEFAULT   10 
+    11: 0000000000000000     0 SECTION LOCAL  DEFAULT   11 
+    12: 0000000000000000     0 SECTION LOCAL  DEFAULT   12 
+    13: 0000000000000000     0 SECTION LOCAL  DEFAULT   13 
+    14: 0000000000000000     0 SECTION LOCAL  DEFAULT   14 
+    15: 0000000000000000     0 SECTION LOCAL  DEFAULT   15 
+    16: 0000000000000000     0 SECTION LOCAL  DEFAULT   16 
+    17: 0000000000000000     0 SECTION LOCAL  DEFAULT   17 
+    18: 0000000000000000     0 SECTION LOCAL  DEFAULT   18 
+    19: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS crtstuff.c
+    20: 0000000000010990     0 OBJECT  LOCAL  DEFAULT    5 __EH_FRAME_BEGIN__
+    21: 0000000000010dc0     0 OBJECT  LOCAL  DEFAULT    6 __JCR_LIST__
+    22: 000000000001004c     0 FUNC    LOCAL  DEFAULT    1 deregister_tm_clones
+    23: 0000000000010080     0 FUNC    LOCAL  DEFAULT    1 register_tm_clones
+    24: 00000000000100c0     0 FUNC    LOCAL  DEFAULT    1 __do_global_dtors_aux
+    25: 0000000000011540     1 OBJECT  LOCAL  DEFAULT   10 completed.3087
+    26: 0000000000010988     0 OBJECT  LOCAL  DEFAULT    4 __do_global_dtors_aux_fin
+    27: 000000000001010c     0 FUNC    LOCAL  DEFAULT    1 frame_dummy
+    28: 0000000000011548    48 OBJECT  LOCAL  DEFAULT   10 object.3092
+    29: 0000000000010980     0 OBJECT  LOCAL  DEFAULT    3 __frame_dummy_init_array_
+    30: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS add.c
+    31: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS crtstuff.c
+    32: 0000000000010990     0 OBJECT  LOCAL  DEFAULT    5 __FRAME_END__
+    33: 0000000000010dc0     0 OBJECT  LOCAL  DEFAULT    6 __JCR_END__
+    34: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS atexit.c
+    35: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS exit.c
+    36: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS fini.c
+    37: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS impure.c
+    38: 0000000000010dd0  1864 OBJECT  LOCAL  DEFAULT    7 impure_data
+    39: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS init.c
+    40: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS __atexit.c
+    41: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS __call_atexit.c
+    42: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS syscalls.c
+    43: 0000000000011538     8 OBJECT  LOCAL  DEFAULT    9 heap_end.2381
+    44: 0000000000011578    16 OBJECT  LOCAL  DEFAULT   10 t0.2343
+    45: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS errno.c
+    46: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS 
+    47: 0000000000010990     0 NOTYPE  LOCAL  DEFAULT    4 __fini_array_end
+    48: 0000000000010988     0 NOTYPE  LOCAL  DEFAULT    4 __fini_array_start
+    49: 0000000000010988     0 NOTYPE  LOCAL  DEFAULT    3 __init_array_end
+    50: 0000000000010980     0 NOTYPE  LOCAL  DEFAULT    3 __preinit_array_end
+    51: 0000000000010980     0 NOTYPE  LOCAL  DEFAULT    3 __init_array_start
+    52: 0000000000010980     0 NOTYPE  LOCAL  DEFAULT    3 __preinit_array_start
+    53: 0000000000010688    20 FUNC    GLOBAL DEFAULT    1 fstatat
+    54: 00000000000108e4    28 FUNC    GLOBAL DEFAULT    1 sysconf
+    55: 0000000000010dd0     0 NOTYPE  GLOBAL DEFAULT    7 _fdata
+    56: 00000000000108bc     8 FUNC    GLOBAL DEFAULT    1 utime
+    57: 00000000000106b8    20 FUNC    GLOBAL DEFAULT    1 faccessat
+    58: 000000000001096c     8 FUNC    GLOBAL DEFAULT    1 __errno
+    59: 00000000000107fc   144 FUNC    GLOBAL DEFAULT    1 times
+    60: 0000000000010980     0 NOTYPE  GLOBAL DEFAULT    2 _etext
+    61: 0000000000011d20     0 NOTYPE  GLOBAL DEFAULT  ABS _gp
+    62: 0000000000010728    36 FUNC    GLOBAL DEFAULT    1 execve
+    63: 0000000000010770     8 FUNC    GLOBAL DEFAULT    1 getpid
+    64: 0000000000011518     0 OBJECT  GLOBAL HIDDEN     7 __TMC_END__
+    65: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND malloc
+    66: 00000000000107c0    60 FUNC    GLOBAL DEFAULT    1 isatty
+    67: 0000000000011540     0 NOTYPE  GLOBAL DEFAULT   10 _bss_start
+    68: 0000000000011520     0 OBJECT  GLOBAL HIDDEN     8 __dso_handle
+    69: 00000000000105f8    20 FUNC    GLOBAL DEFAULT    1 lseek
+    70: 0000000000011528     8 OBJECT  GLOBAL DEFAULT    8 _global_impure_ptr
+    71: 00000000000108c4     8 FUNC    GLOBAL DEFAULT    1 chown
+    72: 0000000000010254   160 FUNC    GLOBAL DEFAULT    1 __libc_init_array
+    73: 00000000000108cc     8 FUNC    GLOBAL DEFAULT    1 chmod
+    74: 0000000000010048     0 NOTYPE  GLOBAL DEFAULT    1 _init
+    75: 00000000000101f8    92 FUNC    GLOBAL DEFAULT    1 __libc_fini_array
+    76: 0000000000010620    20 FUNC    GLOBAL DEFAULT    1 write
+    77: 0000000000010634    28 FUNC    GLOBAL DEFAULT    1 fstat
+    78: 0000000000010778    36 FUNC    GLOBAL DEFAULT    1 kill
+    79: 0000000000011588     4 OBJECT  GLOBAL DEFAULT   10 add
+    80: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND __deregister_frame_info
+    81: 00000000000108d4     8 FUNC    GLOBAL DEFAULT    1 chdir
+    82: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_registerTMCloneTable
+    83: 000000000001079c    36 FUNC    GLOBAL DEFAULT    1 wait
+    84: 0000000000010408   404 FUNC    GLOBAL DEFAULT    1 __call_exitprocs
+    85: 0000000000010000     0 NOTYPE  GLOBAL DEFAULT    1 _ftext
+    86: 0000000000010000     0 NOTYPE  GLOBAL DEFAULT    1 _start
+    87: 000000000001066c    28 FUNC    GLOBAL DEFAULT    1 lstat
+    88: 000000000001060c    20 FUNC    GLOBAL DEFAULT    1 read
+    89: 00000000000102f4   276 FUNC    GLOBAL DEFAULT    1 __register_exitproc
+    90: 0000000000010708    32 FUNC    GLOBAL DEFAULT    1 unlink
+    91: 000000000001074c    36 FUNC    GLOBAL DEFAULT    1 fork
+    92: 000000000001059c    48 FUNC    GLOBAL DEFAULT    1 __syscall_error
+    93: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_deregisterTMCloneTab
+    94: 0000000000010900    80 FUNC    GLOBAL DEFAULT    1 sbrk
+    95: 000000000001088c    32 FUNC    GLOBAL DEFAULT    1 gettimeofday
+    96: 0000000000010164    80 FUNC    GLOBAL DEFAULT    1 main
+    97: 00000000000108dc     8 FUNC    GLOBAL DEFAULT    1 getcwd
+    98: 0000000000010048     0 NOTYPE  GLOBAL DEFAULT    1 _fini
+    99: 00000000000101b4    20 FUNC    GLOBAL DEFAULT    1 atexit
+   100: 0000000000011530     8 OBJECT  GLOBAL DEFAULT    8 _impure_ptr
+   101: 00000000000108ac    16 FUNC    GLOBAL DEFAULT    1 ftime
+   102: 0000000000010650    28 FUNC    GLOBAL DEFAULT    1 stat
+   103: 000000000001069c    28 FUNC    GLOBAL DEFAULT    1 access
+   104: 0000000000011518     0 NOTYPE  GLOBAL DEFAULT    7 _edata
+   105: 0000000000011590     0 NOTYPE  GLOBAL DEFAULT   10 _end
+   106: 00000000000106ec    28 FUNC    GLOBAL DEFAULT    1 link
+   107: 00000000000101c8    48 FUNC    GLOBAL DEFAULT    1 exit
+   108: 00000000000105e4    20 FUNC    GLOBAL DEFAULT    1 openat
+   109: 0000000000010950    28 FUNC    GLOBAL DEFAULT    1 _exit
+   110: 00000000000105cc    24 FUNC    GLOBAL DEFAULT    1 open
+   111: 000000000001158c     4 OBJECT  GLOBAL DEFAULT   10 sub
+   112: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _Jv_RegisterClasses
+   113: 0000000000011538     0 NOTYPE  GLOBAL DEFAULT    9 _fbss
+   114: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND __register_frame_info
+   115: 00000000000106cc    32 FUNC    GLOBAL DEFAULT    1 close
+   116: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND free
+
+No version information found in this file.
